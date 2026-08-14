@@ -1,0 +1,12 @@
+{
+  "name": "dsh-spoke-wire-tap",
+  "private": true,
+  "type": "module",
+  "main": "./lib/index.js",
+  "description": "Evidence plugin: capture every llm/stream request/response pair to a JSONL file.",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

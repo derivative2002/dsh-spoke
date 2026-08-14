@@ -1,0 +1,16 @@
+# Dependencies — this repo ships source only; installs are reproduced from the
+# pinned versions in package.json / package-lock.json.
+node_modules/
+
+# Runtime artifacts (never commit evidence from live runs)
+*.log
+*.jsonl
+events*.ndjson
+.dsh-spoke/
+
+# OS noise
+.DS_Store
+
+# Local editor state
+.idea/
+.vscode/

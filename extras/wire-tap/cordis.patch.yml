@@ -1,0 +1,7 @@
+# Mount wire-tap into a profile. Set DSH_WIRE_TAP_PATH to the JSONL output
+# file before starting the runtime.
+- insert:
+    - id: wire-tap
+      name: 'dsh-spoke-wire-tap'
+      config:
+        outputPath: !!js process.env.DSH_WIRE_TAP_PATH

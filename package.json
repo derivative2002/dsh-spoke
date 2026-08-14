@@ -1,0 +1,21 @@
+{
+  "name": "dsh-spoke",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A governed execution seat for DSH: contracts in, runner-level guardrails around, evidence out. Drives a resident DSH runtime through multi-turn contracts with steer, hard-stop, and a pluggable reporter interface.",
+  "license": "MIT",
+  "bin": {
+    "dsh-spoke": "./src/dsh-spoke.mjs"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\""
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh-sdk-client": "0.0.1-rc.1",
+    "@deepseek-ai/dsh-sdk-jsonrpc-server": "0.0.1-rc.5"
+  }
+}
