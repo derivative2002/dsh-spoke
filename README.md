@@ -58,7 +58,9 @@ tool-call arguments against the parsed blocklist:
 ```
 
 A prompt-level rule dies to prompt-level injection. A runner-level rule
-doesn't care what the text says.
+doesn't care what the text says. The full run — reporter envelopes, guard
+log, and the intercepted call — is in
+[docs/verification.md](docs/verification.md).
 
 ## Three-minute start
 
@@ -84,9 +86,12 @@ node src/dsh-spoke.mjs run examples/contract-example.md \
 node src/dsh-spoke.mjs steer "stop exploring, converge on the fix" --cid example-two-turn-001
 ```
 
-The example contract stores a codeword in turn 1 and asks for it in turn 2 —
-if turn 2 answers correctly, you have just verified kernel-level multi-turn
-memory on a resident session. Contract syntax: [docs/contract-format.md](docs/contract-format.md).
+The example contract stores a codeword in turn 1 and asks for it back in
+turn 2 **with tools forbidden** — a correct answer verifies kernel-level
+multi-turn memory on a resident session, recalled from the session itself
+rather than from any file. Our own run of both this and the interception
+drill, with verbatim evidence, is in [docs/verification.md](docs/verification.md).
+Contract syntax: [docs/contract-format.md](docs/contract-format.md).
 
 ## What's actually novel here (and what isn't)
 

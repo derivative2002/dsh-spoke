@@ -33,6 +33,7 @@ Do not write any files.
 </turn>
 
 <turn>
-What was the codeword I gave you in the previous turn? Reply with the codeword
-only.
+What was the codeword I gave you in the previous turn? Do not use any tools
+for this turn — no file reads, no shell, nothing. Answer purely from session
+memory, replying with the codeword only.
 </turn>
